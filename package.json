@@ -1,0 +1,24 @@
+{
+  "name": "accessibility-landing-example",
+  "version": "1.0.0",
+  "description": "Accessibility Landing Example",
+  "main": "index.js",
+  "repository": "git@github.com:FacundoPomar/accessibility-landing-example.git",
+  "author": "Facundo Pomar",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "start": "lite-server -c lite-server-config.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.1",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "lite-server": "^2.4.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

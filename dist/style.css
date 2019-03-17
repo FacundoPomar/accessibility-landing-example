@@ -1,0 +1,19 @@
+html {
+  font-size: 16px;
+}
+body {
+  background-color: aliceblue;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+/*# sourceMappingURL=style.css.map*/
