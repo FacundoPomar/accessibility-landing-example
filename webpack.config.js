@@ -20,7 +20,7 @@ const config = {
             {
                 test: /\.less$/,
                 exclude: /node_modules/,
-                loader: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
+                loader: [MiniCssExtractPlugin.loader, { loader: 'css-loader', options: { url: false } }, 'less-loader']
             }, {
                 test: /\.css$/,
                 loaders: [MiniCssExtractPlugin.loader, 'css-loader' ]

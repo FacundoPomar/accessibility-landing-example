@@ -365,7 +365,7 @@ a {
 }
 .landing-section-start {
   color: white;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), url(/assets/img/start_section_bg.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%), url(./assets/img/start_section_bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
