@@ -1,19 +1,168 @@
+@import './variables.less';
+
 html {
     font-size: 16px;
 }
 
 body {
-    background-color: aliceblue;
+    font-family: @defaultFontFamily;
+}
+// Normalize links across page
+a {
+    color: @primarySectionFontColor;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-.header {
+.landing-section {
+    padding: 10px 10px 30px;
+    background-color: darkslategrey;
+}
+
+.landing-section-start {
+    color: @primarySectionFontColor;
+    // Apply a vertical gradient, then an horizontal one and finally an image.
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%), linear-gradient(to right, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%), url(/assets/img/start_section_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.landing-header {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+
+    & > * {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
 }
 
-.page-title {
-    font-size: 3rem;
-    text-align: center
+.landing-logo-brand {
+    margin-left: 10px;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.landing-logo-container,
+.landing-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-nav-item {
+    padding: 0 5px;
+}
+
+.landing-button {
+    border: 2px solid @primarySectionFontColor;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    color: @primarySectionFontColor;
+}
+
+.landing-nav-action {
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+
+    .landing-button {
+        background-color: transparent;
+    }
+}
+
+.landing-section-start-main-content {
+    margin-top: 30px;
+}
+
+.landing-section-start-title {
+    font-size: 2rem;
+}
+
+.landing-section-start-action-container {
+    width: 255px;
+    max-width: 80%;
+    margin: 20px auto;
+
+    .landing-button {
+        border-color: @primaryAccentColor;
+        background-color: @primaryAccentColor;
+    }
+}
+
+.landing-section-start-description {
+    font-size: 1.2rem;
+}
+
+.landing-section-start-video-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.landing-section-start-video-link {
+    font-size: 1.1rem;
+    color: #7e8085;
+    font-family: @secondaryFontFamily;
+}
+
+.landing-section-start-video-logo {
+    width: 37px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media @gt-sm {
+    .landing-section {
+        padding: 35px 10%;
+    }
+
+    .landing-nav-item {
+        padding: 0 25px;
+    }
+
+    .landing-header {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > * {
+            width: auto;
+        }
+    }
+
+    .landing-nav-action {
+        width: auto;
+        max-width: unset;
+    }
+
+    .landing-section-start-main-content {
+        max-width: 360px;
+    }
+
+    .landing-section-start-action-container {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media @gt-lg {
+    html {
+        font-size: 18px;
+    }
+
+    .landing-section {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .landing-section-start-main-content {
+        margin-top: 180px;
+        margin-bottom: 180px;
+    }
 }

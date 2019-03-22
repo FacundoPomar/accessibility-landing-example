@@ -23,7 +23,6 @@ const config = {
                 loader: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
             }, {
                 test: /\.css$/,
-                exclude: /node_modules/,
                 loaders: [MiniCssExtractPlugin.loader, 'css-loader' ]
             }
         ]
@@ -36,6 +35,10 @@ const config = {
         new CopyWebpackPlugin([{
             from: './src/html/index.html',
             to: distPath
+        }]),
+        new CopyWebpackPlugin([{
+            from: './src/assets',
+            to: distPath + '/assets'
         }])
     ]
 };
