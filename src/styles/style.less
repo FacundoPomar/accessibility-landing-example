@@ -16,7 +16,6 @@ a {
 
 .landing-section {
     padding: 10px 10px 30px;
-    background-color: darkslategrey;
 }
 
 .landing-section-start {
@@ -97,6 +96,7 @@ a {
 
 .landing-section-start-description {
     font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .landing-section-start-video-container {
@@ -115,6 +115,73 @@ a {
     width: 37px;
     height: auto;
     margin-right: 10px;
+}
+
+.landing-section-creativity {
+    background-color: @secondarySectionBg;
+}
+
+.landing-creativity-title {
+    font-size: 2rem;
+    text-align: center;
+    color: @secondarySectionFontColor;
+    font-weight: 400;
+}
+
+.landing-creativity-description {
+    text-align: center;
+    color: @ternarySectionFontColor;
+    font-size: 1.1rem;
+}
+
+.landing-creativity-build-container {
+    font-size: 1.1rem;
+}
+
+.landing-creativity-build-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.landing-creativity-build-title {
+    color: @secondarySectionFontColor;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.landing-creativity-build-options {
+    color: @ternarySectionFontColor;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e7eaee;
+    max-width: 90%;
+    list-style: none;
+}
+
+.landing-creativity-build-option {
+    margin-bottom: 10px;
+
+    &::before {
+        content: "\25CF";
+        color: #c9cdd5;
+        font-weight: bold;
+        display: inline-block;
+        width: 2rem;
+        height: 1rem;
+        font-size: 1.5rem;
+        margin-left: -2rem;
+    }
+}
+
+.landing-creativity-build-review {
+    color: @ternarySectionFontColor;
+}
+
+.landing-creativity-build-review-signature {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: right;
+    color: @secondarySectionFontColor;
 }
 
 @media @gt-sm {
@@ -147,6 +214,24 @@ a {
     .landing-section-start-action-container {
         margin-right: 0;
         margin-left: 0;
+    }
+}
+
+@media @gt-md {
+    .landing-creativity-build-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .landing-creativity-build-options {
+        max-width: unset;
+    }
+
+    .landing-creativity-build-container-elem {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 48%;
     }
 }
 
