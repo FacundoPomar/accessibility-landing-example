@@ -2,6 +2,9 @@
 
 html {
     font-size: 16px;
+    * {
+        box-sizing: border-box;
+    }
 }
 
 body {
@@ -87,7 +90,10 @@ a {
     width: 255px;
     max-width: 80%;
     margin: 20px auto;
+}
 
+.landing-contact-form-container,
+.landing-section-start-action-container {
     .landing-button {
         border-color: @primaryAccentColor;
         background-color: @primaryAccentColor;
@@ -121,14 +127,16 @@ a {
     background-color: @secondarySectionBg;
 }
 
-.landing-creativity-title {
+.landing-creativity-title,
+.landing-contact-title {
     font-size: 2rem;
     text-align: center;
     color: @secondarySectionFontColor;
     font-weight: 400;
 }
 
-.landing-creativity-description {
+.landing-creativity-description,
+.landing-contact-description {
     text-align: center;
     color: @ternarySectionFontColor;
     font-size: 1.1rem;
@@ -184,6 +192,64 @@ a {
     color: @secondarySectionFontColor;
 }
 
+.landing-section-contact {
+    background-color: @ternarySectionBg;
+}
+
+.landing-form-elem {
+    margin-bottom: 30px;
+}
+
+.landing-form-label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: @secondarySectionFontColor;
+}
+
+.landing-form-input {
+    width: 100%;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(231,234,238,1);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(231,234,238,1);
+    box-shadow: 0px 2px 4px 0px rgba(231,234,238,1);
+}
+
+.landing-contact-form-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 110px auto 0;
+}
+
+.landing-form-fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-form-elem-option {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.landing-form-elem-option-label {
+    margin-left: 5px;
+}
+
+.landing-form-elem-option-input {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
 @media @gt-sm {
     .landing-section {
         padding: 35px 10%;
@@ -233,6 +299,18 @@ a {
         flex-grow: 1;
         max-width: 48%;
     }
+
+    .landing-section {
+        padding: 30px 10%;
+    }
+
+    .landing-section {
+        &.landing-section-creativity,
+        &.landing-section-contact {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+    }
 }
 
 @media @gt-lg {
@@ -241,8 +319,7 @@ a {
     }
 
     .landing-section {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding: 50px 20%;
     }
 
     .landing-section-start-main-content {

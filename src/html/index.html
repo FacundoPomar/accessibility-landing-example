@@ -18,9 +18,9 @@
                 <span class="landing-logo-brand">Ice cream</span>
             </h1>
             <nav class="landing-nav">
-                <a class="landing-nav-item" href="#features">Features</a>
-                <a class="landing-nav-item" href="#pricing">Pricing</a>
-                <a class="landing-nav-item" href="#pages">Pages</a>
+                <a class="landing-nav-item" href="#features" title="Features">Features</a>
+                <a class="landing-nav-item" href="#pricing" title="Pricing">Pricing</a>
+                <a class="landing-nav-item" href="#pages" title="Pages">Pages</a>
             </nav>
             <div class="landing-nav-action-container">
                 <div class="landing-nav-action">
@@ -41,7 +41,7 @@
             </div>
         </article>
     </section>
-    <section class="landing-section landing-section-creativity">
+    <section class="landing-section landing-section-creativity" id="features">
         <header>
             <h2 class="landing-creativity-title">
                 Ice cream brings all your creativity together
@@ -63,13 +63,53 @@
                 <div class="landing-creativity-build-review">
                     <blockquote>
                         “Wow. I just updated my site and it was SO SIMPLE. I am blown away. You guys truly kick ass. Thanks for being so awesome. High fives!”
+                        <footer class="landing-creativity-build-review-signature">
+                            James Duren, CTO, Fish&co
+                        </footer>
                     </blockquote>
-                    <div class="landing-creativity-build-review-signature">
-                        James Duren, CTO, Fish&co
-                    </div>
                 </div>
             </div>
         </article>
+    </section>
+    <section class="landing-section landing-section-contact">
+        <header>
+            <h2 class="landing-contact-title">Form Lorem ipsum</h2>
+            <p class="landing-contact-description">
+                When you need a kickstart in your business and you have no time for coding for your website, xPider will take that job for you and will build a great looking website in minutes.
+            </p>
+        </header>
+        <form class="landing-contact-form-container">
+            <div class="landing-form-elem">
+                <label class="landing-form-label" for="firstNameInput" title="Name">Name</label>
+                <input class="landing-form-input" type="text" id="firstNameInput" name="firstNameInput" placeholder="Name">
+            </div>
+            <div class="landing-form-elem">
+                <label class="landing-form-label" for="lastNameInput" title="Last Name">Last Name</label>
+                <input class="landing-form-input" type="text" id="lastNameInput" name="lastNameInput" placeholder="Last Name">
+            </div>
+            <div class="landing-form-elem">
+                <label class="landing-form-label" for="emailInput" title="Email">Email</label>
+                <input class="landing-form-input" type="text" id="emailInput" name="emailInput" placeholder="Email">
+            </div>
+            <div class="landing-form-elem">
+                <fieldset class="landing-form-fieldset">
+                    <legend class="landing-form-label" for="emailEvery">Email me every</legend>
+                    <div class="landing-form-elem-option">
+                        <input class="landing-form-elem-option-input" type="radio" name="emailEvery" id="emailEveryWeek" value="week" checked>
+                        <label class="landing-form-elem-option-label" for="emailEveryWeek">Week</label>
+                    </div>
+                    <div class="landing-form-elem-option">
+                        <input class="landing-form-elem-option-input" type="radio" name="emailEvery" id="emailEveryDay" value="day">
+                        <label class="landing-form-elem-option-label" for="emailEveryDay">Day</label>
+                    </div>
+                    <div class="landing-form-elem-option">
+                        <input class="landing-form-elem-option-input" type="radio" name="emailEvery" id="emailEveryHour" value="hour">
+                        <label class="landing-form-elem-option-label" for="emailEveryHour">Hour</label>
+                    </div>
+                </fieldset>
+            </div>
+            <button type="submit" class="landing-button" title="send">SEND</button>
+        </form>
     </section>
     <script src="./bundle.js"></script>
 </body>
