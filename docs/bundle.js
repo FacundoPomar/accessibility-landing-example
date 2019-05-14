@@ -113,6 +113,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+window.blurMe = () => {
+    document.body.classList.add('blur-it');
+};
+
+window.evenMore = () => {
+    document.body.classList.add('blur-it-even-more');
+};
+
+window.tooMuch = () => {
+    document.body.classList.remove('blur-it');
+    document.body.classList.remove('blur-it-even-more');
+}
+
 /***/ }),
 
 /***/ "./src/styles/style.less":
