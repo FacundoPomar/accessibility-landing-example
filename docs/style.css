@@ -505,7 +505,8 @@ a {
   text-align: right;
   color: #2c2e30;
 }
-.landing-section-contact {
+.landing-section-contact,
+.landing-footer {
   background-color: #f6f8f9;
 }
 .landing-form-elem {
@@ -552,6 +553,23 @@ a {
   width: 1.2rem;
   height: 1.2rem;
 }
+.landing-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.landing-footer-elem {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.landing-footer-link {
+  color: #7e8085;
+  font-size: 0.8rem;
+  margin: 5px;
+}
 @media (min-width: 768px) {
   .landing-section {
     padding: 35px 10%;
@@ -575,6 +593,15 @@ a {
   }
   .landing-section-start-action-container {
     margin-right: 0;
+    margin-left: 0;
+  }
+  .landing-footer.landing-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .landing-footer-link:nth-child(1) {
     margin-left: 0;
   }
 }
